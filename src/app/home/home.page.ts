@@ -67,7 +67,6 @@ export class HomePage {
         }
       }),
       catchError((err) => {
-        console.log(err);
 
         this.error = err.error.status_message;
         return [];
@@ -76,7 +75,7 @@ export class HomePage {
     )
       .subscribe({
         next: (res) => {
-          console.log(res);
+
 
           this.movies.push(...res.results);
           if (event) {
