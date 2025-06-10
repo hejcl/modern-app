@@ -12,7 +12,7 @@ import {
   IonLabel,
   IonBadge,
   IonInfiniteScroll,
-  IonInfiniteScrollContent
+  IonInfiniteScrollContent, IonSearchbar
 } from '@ionic/angular/standalone';
 import {MovieService} from "../services/movie.service";
 import {InfiniteScrollCustomEvent} from "@ionic/angular";
@@ -40,7 +40,7 @@ import {RouterModule} from "@angular/router";
     RouterModule,
     IonBadge,
     IonInfiniteScroll,
-    IonInfiniteScrollContent],
+    IonInfiniteScrollContent, IonSearchbar],
 })
 export class HomeDeferPage {
   private movieService = inject(MovieService);
